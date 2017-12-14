@@ -80,7 +80,7 @@ public class CustomerPsstructureFacadeREST extends AbstractFacade<CustomerPsstru
     @Path("count")
     @Produces(MediaType.TEXT_PLAIN)
     public String countREST() {
-        return String.valueOf(super.count());
+        return "Customer nr :" + String.valueOf(super.count());
     }
 
     @Override
